@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟网易注册页面</title>
+	<link rel=stylesheet href="wangyi/wangyi.css">
+	<script src="wangyi/wangyi.js"></script>
+</head>
+<body>
+	<div class="all-content">
+		<div class="top">
+			<a href="#"><img src="./images/register_logo.gif" alt=""></a>
+		</div>
+		<div class="main">
+		<form action="./success.html" method="post" onsubmit="return checkForm()">
+			<table cellpadding="4px">
+				<tr>
+					<td name="td1">通行证用户名：</td>
+					<td><input class="unameinp" type="text" name="username" onfocus="onUnamefocus()" onblur="onUnameblur()" id="unameId">
+					<span>@163.com</span></td>
+					<td><div id="username"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">登录密码：</td>
+					<td><input type="password" name="password" onfocus="onPasswordfocus()" onblur="onPasswordblur()" id="pwdId"></td>
+					<td><div id="password"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">重复登录密码：</td>
+					<td><input type="password" name="passwords" onfocus="onPasswordsfocus()" onblur="onPasswordsblur()" id="pwdsId"></td><td><div id="passwords"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">性别：</td>
+					<td><input type="radio" name="sex" value="男" checked="">男&nbsp;&nbsp;
+						<input type="radio" name="sex" value="女">女</td>
+					<td><div id="sex"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">真实姓名：</td>
+					<td><input type="text" name="name" onfocus="onNamefocus()" onblur="onNameblur()"></td>
+					<td><div id="name"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">昵称：</td>
+					<td><input type="text" name="vname" onfocus="onVnamefocus()" onblur="onVnameblur()" id="vnameId"></td>
+					<td><div id="vname"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">关联手机号：</td>
+					<td><input type="text" name="tel" onfocus="onTelfocus()" onblur="onTelblur()" id="telId"></td>
+					<td><div id="tel"></div></td>
+				</tr>
+				<tr>
+					<td name="td1">保密邮箱：</td>
+					<td><input type="text" name="email" onfocus="onEmailfocus()" onblur="onEmailblur()" id="emailId"></td>
+					<td><div id="email"></div></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="image" src="./images/button.gif" width="200px"></td>
+				</tr>
+			</table>
+		</form>
+		</div>
+		
+	</div>
+</body>
+</html>
