@@ -1,5 +1,16 @@
 $(document).ready(function () {
     $("textarea").attr("disabled","disabled");
+    var mypicbox = $(".mypic-box");
+    var mypicboxback = $(".mypic-box-back");
+    mypicbox.mouseenter(function () {
+            mypicboxback.animate({
+                top: '-128px'
+            });
+    }).mouseleave(function () {
+        mypicboxback.animate({
+            top: '-250px'
+        });
+    });
     // var value = $("table>tr>td>input").slider({
     //     value: 100,
     //     min: 0,
