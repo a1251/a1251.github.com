@@ -97,16 +97,14 @@
     border: 1px solid transparent;
     box-shadow: #0e0e0e 0px 0px 5px 2px;
     cursor: pointer;
-}
-@media screen and(min-width: 736px) {
-    .mypic-box{
-        position: relative;
-        left: 355px;
-    }
+    position: relative;
+    left: 355px;
 }
 
 @media screen and (max-width: 736px){
     .mypic-box{
+        position: relative;
+        left: 0px;
         margin-left: 16em;
 
     }
@@ -156,7 +154,7 @@
         float: right;
     }
     #table-right{
-        height: 120em;
+        height: 130em;
         display: block;
         color: #05FF3A;
     }
