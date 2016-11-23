@@ -105,7 +105,7 @@
     .mypic-box{
         position: relative;
         left: 0px;
-        margin-left: 16em;
+        margin-left: 10em;
 
     }
 }
@@ -154,7 +154,7 @@
         float: right;
     }
     #table-right{
-        height: 130em;
+        height: 140em;
         display: block;
         color: #05FF3A;
     }
