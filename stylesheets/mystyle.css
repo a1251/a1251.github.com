@@ -96,15 +96,19 @@
     overflow: hidden;
     border: 1px solid transparent;
     box-shadow: #0e0e0e 0px 0px 5px 2px;
-    position: relative;
-    left: 355px;
     cursor: pointer;
 }
+@media screen and(min-width: 736px) {
+    .mypic-box{
+        position: relative;
+        left: 355px;
+    }
+}
+
 @media screen and (max-width: 736px){
     .mypic-box{
-        float: inherit;
-        position: relative;
-        left: 20%;
+        margin-left: 16em;
+
     }
 }
 .mypic-box-back{
@@ -152,7 +156,7 @@
         float: right;
     }
     #table-right{
-        height: 1900px;
+        height: 120em;
         display: block;
         color: #05FF3A;
     }
