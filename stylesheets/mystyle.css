@@ -94,7 +94,9 @@
 }
 @media screen and (max-width: 736px){
     .mypic-box{
-        margin-right: auto;
+        margin-right: 400px;
+        position: relative;
+        left: 40%;
     }
 }
 .mypic-box-back{
