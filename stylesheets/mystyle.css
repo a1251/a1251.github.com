@@ -105,7 +105,7 @@
     .mypic-box{
         position: relative;
         left: 0px;
-        margin-left: calc(50% - 60px);
+        margin-left: calc(50% - 3.75em);
 
     }
 }
