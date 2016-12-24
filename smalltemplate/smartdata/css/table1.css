@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-content .pull-right{
+    margin-bottom: 10px;
+}
+.icon-point{
+    text-align: center;
+}
+.input-append input{
+    height: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.pull-right .btn{
+    width: 60px;
+    height: 37px;
+}
+.input-append .btn{
+    background-color: #fe8771;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fe8771),from(#f18771));
+    background-image: -webkit-linear-gradient(top,#fe8771,#f18771);
+    border-color: #fe8771;
+    color: #fff;
+}
+.btn-group{
+    position: relative;
+    top: -5px;
+}
+.table th{
+    background-color: #3cc8d0;
+    color: #fff;
+    text-align: center;
+}
+.table tbody tr td {
+    color: #7f7f7f;
+    text-align: center;
+    background-color: #fff;
+}
+.page-control{
+    display: inline-block;
+}
+.page-control a{
+    color: #7f7f7f;
+}
+.page-control span{
+    color: #7f7f7f;
+}
+.page-control label a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.page-control label a:hover{
+    border-radius: 10px;
+    background-color: #05b3e1;
+    color: #fff;
+}
+.page-control .page-active{
+    border-radius: 10px;
+    background-color: #05b3e1;
+    color: #fff;
+}
+.page-control span{
+    margin-left: 20px;
+}
+.page-control label{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#id-all{
+    width: 11%;
+}
+#cate-all{
+    width: 17%;
+}
+#name-all{
+    width: 19%;
+}
+#suport-all{
+    width: 28%;
+}
+#description-all{
+    width: 25%;
+}

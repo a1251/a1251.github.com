@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="大数据，数据，风控">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="image/icon/logo.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">-->
+    <link rel="stylesheet" href="css/metro-icons.css">
+    <script src="jslib/jquery-1.7.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jslib/firstpage.js"></script>
+    <!-- [if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>首页</title>
+    <style>
+        html .fix-ie-font-face :before,
+        html .fix-ie-font-face :after {
+            content: none !important;
+        }
+
+    </style>
+
+</head>
+<body>
+        <div>
+        <nav class="navbar" role="navigation">
+            <div class="container-fluid">
+                <!--<div class="nav-header">-->
+                    <a class="navbar-brand" href="#">
+                        <span><img src="image/mainpage/dllogo.png"></span><h1>大数据风控平台</h1>
+                    </a>
+                <!--</div>-->
+
+                <div class="smallbtn-right">
+                    <span class="mif-user"></span><span>欢迎：</span><span id="user-name">xiaoming</span>
+                    <span class="mif-alarm"></span><span id="time-now"></span>
+                    <label class="exit"><span class="mif-exit"></span><span>退出</span></label>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div class="content-center">
+            <div class="mainnav-left">
+                <ul class="nav-left">
+                    <li id="scroll">
+                            <div class="scrollmenu">
+                                <span class="mif-menu menu-icon"></span>收起侧边栏
+                                <!--<span class="pull-right triangle-left"></span>-->
+                                <!--&lt;!&ndash;<span class="mif-expand-more pull-right"></span>&ndash;&gt;-->
+                                <!--<span class="mif-chevron-left pull-right"></span>-->
+                            </div>
+                        <!--<ul>-->
+                            <!--<li><a href="#"><span class="mif-menu"></span>文字待定1</a></li>-->
+                            <!--<li><a href="#"><span class="mif-menu"></span>文字待定2</a></li>-->
+                            <!--<li><a href="#"><span class="mif-menu"></span>文字待定3</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="mif-paper-plane menu-icon"></span>风控查询
+                            <span class="pull-right triangle-left"></span>
+                            <!--<span class="mif-expand-more pull-right"></span>-->
+                            <span class="mif-chevron-left pull-right"></span>
+                        </a>
+                        <ul>
+                            <li><a href="#" class="query1"><span class="mif-chart-bars2"></span>电信实时单条查询</a></li>
+                            <li><a href="#" class="query2"><span class="mif-chart-pie"></span>电信批量查询</a></li>
+                            <li><a href="#" class="query3"><span class="mif-clipboard"></span>电信数据查询结果</a></li>
+                            <li><a href="#" class="query4"><span class="mif-folder"></span>风控地图</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="#">
+                                <span class="mif-cog menu-icon"></span>系统设置
+                                <span class="pull-right triangle-left"></span>
+                                <!--<span class="mif-expand-more pull-right"></span>-->
+                                <span class="mif-chevron-left pull-right"></span>
+                            </a>
+                        <ul>
+                            <li><a href="#"><span class="mif-menu"></span>系统设置1</a></li>
+                            <li><a href="#"><span class="mif-menu"></span>系统设置2</a></li>
+                            <li><a href="#"><span class="mif-menu"></span>系统设置3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="maindata">
+                <div>
+                    <h5 class="page-header">首页<span class="icon-point">•</span>查询</h5>
+                </div>
+                <iframe src="table1.html" id="maindata-frame">
+
+                </iframe>
+            </div>
+        </div>
+        <div class="firstpage-footer">
+
+        </div>
+<!--<script src="jslib/angular-1.2.js"></script>-->
+<!--<script src="jslib/firstpageData.js"></script>-->
+</body>
+<link rel="stylesheet" href="css/firstpage.css">
+<script>
+    //重设伪类，使字体强制生效
+    !(function redrawFontFace() {
+        if ($.support.leadingWhitespace) return;
+        $(window).on("load", function() {
+            var style = $("head>style");
+            //console.log("onload!!!!!!!!!!!");
+            setTimeout(function() {
+                style.remove();
+            }, 100);
+        });
+    }());
+</script>
+</html>

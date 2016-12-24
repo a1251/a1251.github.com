@@ -105,7 +105,7 @@
     .mypic-box{
         position: relative;
         left: 0px;
-        margin-left: 10em;
+        margin-left: calc(50% - 60px);
 
     }
 }
@@ -253,6 +253,9 @@ textarea{
 table input{
     width: 200px;
 }
+input[type=range]{
+    cursor: pointer;
+}
 .small-font{
     font-size: 14px;
 }
@@ -344,4 +347,8 @@ table input{
         width: 100%;
         margin: auto;
     }
+}
+
+dd a{
+    color: #2a363c;
 }

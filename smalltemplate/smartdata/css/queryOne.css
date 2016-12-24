@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h4{
+    font-size: 16px;
+    color: #676767;
+    margin-bottom: 20px;
+}
+input:focus{
+    border: none !important;
+}
+.query-box{
+    width: 100%;
+    border: 1px solid #d5d7dc;
+    background-color: #fff;
+}
+.query-info{
+    display: table;
+    width: 100%;
+}
+.form-up{
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid #C8C8C8;
+}
+.query-input{
+    display: inline-block;
+    width: 40%;
+    height: 60px;
+    padding-left: 5%;
+    padding-top: 30px;
+    color: #C8C8C8;
+    font-size: 14px;
+}
+.query-input-focus{
+    color: #4d4d4d;
+}
+.query-input >span{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+.form-input{
+    display: inline-block;
+    border-bottom: 1px solid #C8C8C8;
+}
+/*.form-input:hover{*/
+    /*border-color: #07b2e3;*/
+    /*color: #07b2e3;*/
+/*}*/
+.form-input-focus{
+     border-bottom-color: #07b2e3;
+     color: #07b2e3;
+ }
+
+/*.input-hover{*/
+    /*border-color: #07b2e3;*/
+    /*color: #07b2e3;*/
+/*}*/
+.mif-mobile,.mif-user,.mif-file-text{
+    font-size: 20px;
+}
+.form-input input{
+    border:none;
+    box-shadow: none;
+    height: 30px;
+    margin-bottom: 0px;
+}
+input:hover{
+    box-shadow: none;
+}
+select{
+    width: 120px;
+    height: 28px;
+    color: #808080;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../image/icon/selectDown.png") no-repeat scroll right center transparent;
+}
+.form-down{
+    width: 100%;
+    height: 50%;
+}
+.checkbox-group{
+    width: 90%;
+    height: 60px;
+    margin: 20px auto;
+    color: #878787;
+    font-size: 12px;
+}
+.checkbox-group> label{
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox-group input{
+    margin-top: 20px;
+}
+.off-button{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #bcbec3;
+    border-radius: 10px;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+    margin: 0px 5px;
+    box-shadow: #bcbec3 0px 0px 0px 0px inset;
+}
+.on-button{
+    background-color: #07b2e3;
+    border-color: #07b2e3;
+    box-shadow: #07b2e3 0px 0px 0px 10px inset;
+}
+.off{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 15px;
+    height: 13px;
+    border: 1px solid #bcbec3;
+    border-radius: 10px;
+    background-color: #bcbec3;
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+}
+
+.on{
+    left: 13px;
+    background-color: #fff;
+    border-color: #fff;
+}
+.division{
+    display: inline-block;
+    height: 25px;
+    width: 1px;
+    background-color: #bcbec3;
+    position: relative;
+    top: 5px;
+    margin: 0px 20px 0px 0px;
+}
+.checkbox-group input[type='checkbox']{
+    position: absolute;
+    visibility: hidden;
+}
+.my-checkbox{
+    opacity: 0.9;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #07b2e3;
+    border-radius: 3px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+.my-checkbox:hover{
+    opacity: 1;
+}
+.my-checkbox:after{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background: transparent;
+    top: 0px;
+    left: 0px;
+    border: 3px solid #07b2e3;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.checkbox-group label input[type=checkbox]:checked + label:after{
+    opacity: 1;
+}
+input[type='submit']{
+    width: 270px;
+    height: 40px;
+    background-color: #07b2e3;
+    border: 1px solid #07b2e3;
+    border-radius: 5px;
+    float: right;
+    margin: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0px;
+}

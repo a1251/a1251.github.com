@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#maindata{
+    clear: left;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+}
+.maindata-inner{
+    width: 100%;
+    height: 565px;
+    margin: auto;
+    background-color: #eff4f5;
+}
+.main-content{
+    width: 95%;
+    margin: auto;
+    padding-top: 30px;
+}

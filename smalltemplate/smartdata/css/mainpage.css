@@ -1,0 +1,522 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.uSEO{
+    position: absolute;
+    left: -999999px;
+}
+.main-whole{
+    width: 100%;
+    height: 690px;
+    position: relative;
+    /*border: 1px dotted silver;*/
+}
+
+@media screen and (min-height: 690px){
+    .main-whole{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .main-whole{
+        width: 100%;
+        height: 100%;
+    }
+}
+.logo-img{
+    width: 50%;
+    height: 10%;
+    margin: 100px auto;
+    position: relative;
+
+}
+@media screen and (max-width: 1150px) {
+    .logo-img{
+        display: inline-block;
+        width: 12em;
+        height: 40px;
+        margin: 15px 15px;
+        position: relative;
+        float: left;
+    }
+}
+#login-box{
+    float: right;
+    display: inline-block;
+    width: 400px;
+    margin: auto;
+    height: 500px;
+}
+@media screen and (max-width: 1280px) {
+    #login-box{
+        width: 34%;
+        height: 100%;
+        float: right;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #login-box{
+        width: 35%;
+        height: 100%;
+        /*height: 100%;*/
+    }
+}
+@media screen and (max-width: 1150px) {
+    #login-box{
+        float: left;
+        width: 100%;
+        height: 70px;
+        background-color: #07b2e3;
+        position: relative;
+        top: 0px;
+        z-index: 200;
+        box-shadow: 1px 1px 10px 1px #000000;
+    }
+}
+/*#login-box h1{*/
+/*text-align: center;*/
+/*font-size: 24px;*/
+/*margin-bottom: 60px;*/
+/*}*/
+.login-main{
+    display: block;
+    width: 270px;
+    height: 300px;
+    margin: 100px auto 0px auto;
+}
+@media screen and (max-width: 1150px){
+    .login-main{
+        /*transition: height 1s;*/
+        /*-webkit-transition: height 1s;*/
+        /*-moz-transition: height 1s;*/
+        /*-o-transition: height 1s;*/
+        position: absolute;
+        z-index: 10;
+        top: 70px;
+        width: 100%;
+        height: 450px;
+        margin: 0px;
+        display: none;
+        background-color: #fff;
+        /*opacity: 1;*/
+        box-shadow: 1px 0px 5px 1px black;
+    }
+}
+#login input{
+    display: block;
+    height: 45px;
+    margin: 0px;
+    border: 1px solid transparent;
+}
+.mif-lock,.mif-user{
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem;
+    color: #07b2e3;
+    font-size: 24px;
+}
+@media screen and (min-width: 1280px){
+    #login-box h1{
+        font-size: 2em;
+        margin-bottom: 3.5em;
+    }
+    #login-box{
+        margin: auto;
+    }
+    .login-main{
+        width: 60%;
+        height: 50%;
+        margin: 20% 20% 0px 20%;
+    }
+    .mif-lock,.mif-user{
+        top: 0.75rem;
+    }
+    #login input{
+        width: 100%;
+    }
+}
+.form-input{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid silver;
+    font-size: 20px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1150px){
+    .form-input{
+        width: 80%;
+        margin: 15px auto;
+    }
+    #login input{
+        width: 100%;
+    }
+}
+#login input[type='text'],#login input[type='password']{
+    display: inline-block;
+    /*width: 80%;*/
+    padding-left: 2.5rem;
+    /*border-bottom: 1px solid silver;*/
+}
+#login input[type='text']{
+background-image: url('../image/icon/icons_03.gif');
+background-repeat: no-repeat;
+background-position: 5px 5px;
+}
+#login input[type='password']{
+background-image: url('../image/icon/icons_05.gif');
+background-repeat: no-repeat;
+background-position: 5px 5px;
+}
+#login input[type='submit']{
+    width: 100%;
+    background-color: #07b2e3;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 1150px){
+    #login input[type='submit']{
+        width: 80%;
+        margin: auto;
+    }
+}
+.access-pic{
+    width: 100%;
+    height: 160px;
+    border: 1px dotted silver;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    color: silver;
+    margin-left: 10px;
+}
+@media screen and (max-width: 1150px){
+    .access-pic{
+        width: 80%;
+        height: 200px;
+        margin: auto;
+    }
+}
+.access-word{
+    font-size: 16px;
+    color: #000;
+    padding-left: 10px;
+    text-align: left;
+    border-bottom: 1px solid silver;
+}
+@media screen and (min-width: 1280px){
+    .form-input{
+        width: 100%;
+    }
+    #login input[type='submit']{
+        width: 100%;
+    }
+}
+.access-refresh{
+    float: right;
+    margin-right: 10px;
+}
+.login-button{
+    display: none;
+    width: 80px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #85daf2;
+    float: right;
+    margin: 15px 15px;
+
+}
+@media screen and (max-width: 1150px) {
+    .login-button{
+        display: inline-block;
+    }
+}
+    .main-function{
+        display: inline-block;
+        width: 65%;
+        height: 100%;
+        background-color: #07b2e3;
+        float: left;
+        position:relative;
+        z-index: 0;
+    }
+@media screen and (max-width: 1150px){
+    .main-function{
+        display: block;
+        width: 100%;
+        position: relative;
+        /*height: 67.5em;*/
+        /*height: 100%;*/
+    }
+}
+/*@media screen and (max-width: 1280px){*/
+    /*.main-function{*/
+        /*width: 65%;*/
+        /*height: 100%;*/
+    /*}*/
+/*}*/
+@media screen and (max-height: 690px){
+    .main-function{
+        /*width: 840px;*/
+        height: 690px;
+    }
+}
+@media screen and (min-height: 690px) {
+    .main-function{
+        height: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main-function{
+        height: 1400px;
+    }
+}
+.login-left{
+    width: 90%;
+    height: 650px;
+    margin: 10px auto 0px auto;
+    position: relative;
+}
+@media screen and (min-width: 1280px){
+    .login-left{
+        width: 90%;
+        height: 90%;
+        margin: 4% auto 0px auto;
+    }
+}
+ul{
+    list-style: none;
+    height: 100%;
+}
+#card{
+    display: inline-block;
+    /*margin-left: 55px;*/
+    color: #fff;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+@media screen and (max-width: 700px) {
+    #card{
+        display: block;
+        width: 100%;
+    }
+}
+.card{
+    list-style: none;
+    width: 100%;
+    height: 18%;
+    background-size: 100% 100%;
+    -webkit-background-size:  100% 100%;/*chrome,safari浏览器*/
+    -moz-background-size: 100% 100%;/*Firefox浏览器*/
+    -o-background-size: 100% 100%;/*opera浏览器*/
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -4px;
+}
+/*.card:hover{*/
+    /*border: 1px solid #fff;*/
+/*}*/
+.card1{
+    background-image: url('../image/mainpage/map.png');
+}
+.card2{
+    background-image: url('../image/mainpage/card2.png');
+}
+.card-word{
+    /*transition: font-size 1s,width 1s;*/
+    /*-webkit-transition: font-size 1s,width 1s;*/
+    /*-moz-transition: font-size 1s,width 1s;*/
+    /*-o-transition: font-size 1s,width 1s;*/
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+}
+/*.card-word:hover{*/
+    /*width: 250px;*/
+    /*font-size: 1.125rem;*/
+/*}*/
+.card2>.card-word{
+    color: #fff;
+}
+@media screen and (min-width: 1280px) {
+    #card{
+        width: 50%;
+        height: 100%;
+    }
+    #card ul{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 17%;
+        margin-top: 3%;
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+    }
+    .card-word{
+        width: 90%;
+        height: 80%;
+        margin: auto;
+    }
+}
+#small-card{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -2px;
+}
+@media screen and (max-width: 700px) {
+    #small-card{
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+.small-function{
+    list-style: none;
+    width: 100%;
+    height: 18%;
+    margin-top: 8px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.card3,.card4{
+    transition: border 1s,width 0.5s;
+    -webkit-transition: border 1s,width 0.5s;
+    -moz-transition: border 1s,width 0.5s;
+    -o-transition: border 1s,width 0.5s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #52c9ec;
+    cursor: pointer;
+    border: 1px solid #85daf2;
+    margin-right: 3px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-align: center;
+    /*box-shadow: 0px 0px 5px 5px #07b2e3;*/
+}
+.mif-cog{
+    font-size: 2em;
+    margin-top: 30px;
+}
+.card3:hover,.card4:hover{
+    border: 1px solid #fff;
+}
+.card3{
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+}
+.card-inside{
+    width: 31%;
+}
+.opaci{
+    transition: opacity 0.3s;
+    opacity: 0.6;
+}
+.card4{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+}
+.card3-long{
+    transition: width 0.7s;
+    -webkit-transition: width 0.7s;
+    -moz-transition: width 0.7s;
+    -o-transition: width 0.7s;
+    width: 100%;
+    /*position: absolute;*/
+}
+.spe{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 1s;
+    background-color: #06c95c;
+    border:1px solid #06c95c;
+    box-shadow: none;
+    text-align: center;
+}
+.spe:hover{
+    transform: rotateX(360deg);
+}
+@media screen and (min-width: 1280px){
+    #small-card{
+        width: 50%;
+        height: 100%;
+    }
+    #small-card ul{
+        width: 100%;
+        height: 100%;
+    }
+    .small-function{
+        width: 100%;
+        height: 17%;
+        margin-top: 2.7%;
+        position: relative;
+        top: -0.3%;
+    }
+    .card3,.card4{
+        -webkit-transition: width 0.5s;
+        -moz-transition: width 0.5s;
+        -o-transition: width 0.5s;
+        transition: width 0.5s;
+        height: 100%;
+        margin-right: 0.8%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .card3{
+        width: 31.6%;
+    }
+    .card4{
+        width: 65.3%;
+    }
+    .card-inside{
+        width: 31.4%;
+        margin-left: 0px;
+    }
+    .spe{
+        width: 65%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .card3-long{
+        transition: width 0.7s;
+        -webkit-transition: width 0.7s;
+        -moz-transition: width 0.7s;
+        -o-transition: width 0.7s;
+        width: 99%;
+    }
+}
+
+

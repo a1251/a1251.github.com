@@ -27,6 +27,8 @@ $(document).ready(function () {
         }
         $(this).next().html(val);
     });
-
+    var mydescription = $("#mydescription").children('textarea').val();
+    //(console.log(mydescription);
+    $("#mydescription").attr("title",mydescription);
 
 });
