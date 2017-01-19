@@ -2,11 +2,16 @@
     margin: 0px;
     padding: 0px;
 }
-h4{
-    font-size: 16px;
-    color: #676767;
-    margin-bottom: 20px;
+body input span{
+    font-family: "å¾®è½¯é›…é»‘", Arial, sans-serif;
 }
+/*h4{*/
+    /*font-family: "å¾®è½¯é›…é»‘", Arial, sans-serif;*/
+    /*font-size: 16px;*/
+    /*color: #676767;*/
+    /*margin-bottom: 20px;*/
+    /*font-weight: 600 !important;*/
+/*}*/
 input:focus{
     border: none !important;
 }
@@ -21,7 +26,7 @@ input:focus{
 }
 .form-up{
     width: 100%;
-    height: 40%;
+    /*height: 200px;*/
     border-bottom: 1px solid #C8C8C8;
 }
 .query-input{
@@ -29,21 +34,47 @@ input:focus{
     width: 40%;
     height: 60px;
     padding-left: 5%;
-    padding-top: 30px;
+    padding-top: 20px;
     color: #C8C8C8;
     font-size: 14px;
+    position: relative;
+    /*text-align: center;*/
 }
 .query-input-focus{
     color: #4d4d4d;
 }
+.query-input:nth-child(1),.query-input:nth-child(2){
+    margin-top: 20px;
+}
+.query-input:nth-child(3){
+    position: relative;
+    top: -30px;
+}
+.query-input:nth-child(3) .query-input-right{
+    position: relative;
+    top: -20px;
+}
 .query-input >span{
     display: inline-block;
-    width: 30%;
+    width: 20%;
     text-align: right;
+    padding-right: 15px;
+    position: relative;
+    top: 9px;
+}
+.query-input-right{
+    position: relative;
+    top: -40%;
+    left: 25%;
+    width: 70%;
+}
+.query-input-right:nth-child(3){
+
 }
 .form-input{
     display: inline-block;
     border-bottom: 1px solid #C8C8C8;
+    position: relative;
 }
 /*.form-input:hover{*/
     /*border-color: #07b2e3;*/
@@ -53,6 +84,10 @@ input:focus{
      border-bottom-color: #07b2e3;
      color: #07b2e3;
  }
+.form-input-error{
+    border-bottom-color: #f25f47;
+    color: #f25f47;
+}
 
 /*.input-hover{*/
     /*border-color: #07b2e3;*/
@@ -60,29 +95,61 @@ input:focus{
 /*}*/
 .mif-mobile,.mif-user,.mif-file-text{
     font-size: 20px;
+    margin-bottom: 8px;
 }
 .form-input input{
+    color: #000;
     border:none;
     box-shadow: none;
+    outline: none;
     height: 30px;
     margin-bottom: 0px;
+    background-color: #fff;
+    font-size: 14px;
 }
 input:hover{
     box-shadow: none;
+    border: none;
+    outline: none;
+}
+.mif-cancel{
+    position: relative;
+    top: 0px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.error-box{
+    width: 200px;
+    margin-right: 0px;
+    color: #f25f47;
+    font-size: 12px;
+    position: relative;
+    left: 0px;
+    padding-top: 5px;
+    visibility: hidden;
 }
 select{
     width: 120px;
     height: 28px;
+    padding-left: 10px;
     color: #808080;
     border: 1px solid #c8c8c8;
     border-radius: 5px;
-    /*½«Ä¬ÈÏµÄselectÑ¡Ôñ¿òÑùÊ½Çå³ý*/
+    cursor: pointer;
+    /*å°†é»˜è®¤çš„selecté€‰æ‹©æ¡†æ ·å¼æ¸…é™¤*/
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
-
-    /*ÔÚÑ¡Ôñ¿òµÄ×îÓÒ²àÖÐ¼äÏÔÊ¾Ð¡¼ýÍ·Í¼Æ¬*/
-    background: url("../image/icon/selectDown.png") no-repeat scroll right center transparent;
+    hidefocus: true;
+    outline: none;
+    hide-focus: expression(this.hideFocus=true);  /* for ie 5+ */
+    /*åœ¨é€‰æ‹©æ¡†çš„æœ€å³ä¾§ä¸­é—´æ˜¾ç¤ºå°ç®­å¤´å›¾ç‰‡*/
+    background: url("../images/icon/selectDown.png") no-repeat scroll 95px center transparent;
+}
+ .selactive{
+    border-color: #07b2e3;
+     background: url("../images/icon/downBlue.png") no-repeat scroll transparent;
+     background-position: 95px center;
 }
 .form-down{
     width: 100%;
@@ -91,12 +158,12 @@ select{
 .checkbox-group{
     width: 90%;
     height: 60px;
-    margin: 20px auto;
+    margin: 10px auto;
     color: #878787;
     font-size: 12px;
 }
 .checkbox-group> label{
-    margin-right: 20px;
+    margin-right: 2%;
     position: relative;
     cursor: pointer;
 }
@@ -153,7 +220,7 @@ select{
     width: 1px;
     background-color: #bcbec3;
     position: relative;
-    top: 5px;
+    top: 7px;
     margin: 0px 20px 0px 0px;
 }
 .checkbox-group input[type='checkbox']{
@@ -170,6 +237,7 @@ select{
     position: relative;
     top: 2px;
     cursor: pointer;
+    margin-right: 4px;
 }
 .my-checkbox:hover{
     opacity: 1;
@@ -207,4 +275,11 @@ input[type='submit']{
     color: #fff;
     cursor: pointer;
     margin-top: 0px;
+    font-size: 18px;
+    -webkit-box-shadow:  1px 0px 5px 1px #b2b2b2;
+    -moz-box-shadow:  1px 0px 5px 1px #b2b2b2;
+    box-shadow:  1px 0px 5px 1px #b2b2b2;
+}
+input[type=submit]:active{
+    box-shadow: 1px 0px 1px 0px #b2b2b2;
 }

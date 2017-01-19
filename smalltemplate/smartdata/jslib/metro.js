@@ -1304,7 +1304,7 @@ $.hotkeys = {
         "\\": "|"
     },
 
-    // excludes: button, checkbox, file, hidden, image, password, radio, reset, search, submit, url
+    // excludes: button, checkbox, file, hidden, images, password, radio, reset, search, submit, url
     textAcceptingInputTypes: [
         "text", "password", "number", "email", "url", "range", "date", "month", "week", "time", "datetime",
         "datetime-local", "search", "color", "tel"],
@@ -5410,7 +5410,7 @@ $(document).on('click', function(e){
     });
 });
 
-// Source: js/widgets/fit-image.js
+// Source: js/widgets/fit-images.js
 $.widget( "metro.fitImage" , {
 
     version: "3.0.0",
@@ -5505,7 +5505,7 @@ $.widget( "metro.fitImage" , {
 
         switch (o.type) {
             case 'diamond': {
-                image_container.addClass('diamond'); div.addClass('image-replacer'); break;
+                image_container.addClass('diamond'); div.addClass('images-replacer'); break;
             }
             case 'bordered': {
                 image_container.addClass('bordered'); break;
@@ -5524,7 +5524,7 @@ $.widget( "metro.fitImage" , {
             }
         }
 
-        image_container.addClass('image-format-'+ o.format);
+        image_container.addClass('images-format-'+ o.format);
         //element.css('display', 'none');
         element.remove();
 

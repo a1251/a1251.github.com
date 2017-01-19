@@ -3,6 +3,7 @@
  */
 var Interval;
 $(document).ready(function () {
+    //console.log(clientY);
     var change = $(".change");
     var random = 0;
     Interval = setInterval(function(){

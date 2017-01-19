@@ -2,10 +2,10 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="keywords" content="大数据，数据，风控">
+    <meta name="keywords" content="智数,大数据，数据，风控">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <link rel="shortcut icon" href="image/icon/logo.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/icon/logo.ico" type="image/x-icon"/>
     <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
     <link rel="stylesheet" href="css/metro-icons.css">
     <link rel="stylesheet" href="css/tableBackground.css">
@@ -22,35 +22,46 @@
                 <div class="query-box">
                     <form class="query-info">
                         <div class="form-up">
-                            <div class="query-input">
+                            <div class="query-input query-input-focus">
                                 <span>手机号：</span>
-                                <div class="form-input">
-                                    <span class="mif-mobile"></span>
-                                    <input type="text"  id="mobile-number"/>
+                                <div class="query-input-right">
+                                    <div class="form-input form-input-focus">
+                                        <span class="mif-mobile"></span>
+                                        <input type="text"  id="mobile-number"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span></span><span class="error-words"></span></div>
                                 </div>
                             </div>
                             <div class="query-input">
-                                <span>姓名:</span>
-                                <div class="form-input">
-                                    <span class="mif-user"></span>
-                                    <input type="text" />
+                                <span>姓名：</span>
+                                <div class="query-input-right">
+                                    <div class="form-input">
+                                        <span class="mif-user"></span>
+                                        <input type="text" disabled id="user-name"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span></span><span class="error-words"></span></div>
                                 </div>
                             </div>
 
                             <div class="query-input">
                                 <span>证件类型：</span>
-                                <select>
-                                    <option value="">身份证</option>
-                                    <option value="">港澳通行证</option>
-                                    <option value="">户口本</option>
-                                    <option value="">。。。</option>
-                                </select>
+                                <div class="query-input-right">
+                                    <select disabled id="ident-cate">
+                                        <option value="1">身份证</option>
+                                        <option value="2">港澳通行证</option>
+                                        <option value="3">户口本</option>
+                                        <option value="4">。。。</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="query-input">
                                 <span>证件号：</span>
-                                <div class="form-input">
-                                    <span class="mif-file-text"></span>
-                                    <input type="text" />
+                                <div class="query-input-right">
+                                    <div class="form-input">
+                                        <span class="mif-file-text"></span>
+                                        <input type="text" disabled id="ident-number"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span><span class="error-words"></span></div>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +111,7 @@
                             </div>
 
                             <div>
-                                <input type="submit"/>
+                                <input type="submit" value="查询"/>
                             </div>
                         </div>
                     </form>

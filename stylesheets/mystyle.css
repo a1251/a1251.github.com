@@ -16,9 +16,9 @@
     }
 }
 @media screen and (min-width: 1024px){
-    .main-content{
-        width: 1024px;
-    }
+    /*.main-content{*/
+        /*width: 1024px;*/
+    /*}*/
 }
 @media screen and (max-width: 736px){
     .main-content{
@@ -52,7 +52,7 @@
     font-size: 30px;
     font-weight: 900;
 }
-.mypictrue{
+.mypictrue {
     width: 120px;
     height: 120px;
     border-radius: 60px;
@@ -60,6 +60,9 @@
     z-index: 1;
     /*-moz-transform:rotate(-90deg);*/
     /*-webkit-transform:rotate(-90deg);*/
+}
+.mypic-box:hover>.mypic-box-back{
+    top: -128px;
 }
 .font-yellow{
     color: yellow;
@@ -110,6 +113,11 @@
     }
 }
 .mypic-box-back{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     display: inline-block;
     background-color: white;
     color: silver;
@@ -283,17 +291,18 @@ input[type=range]{
     .project-name:hover {
         font-size: 2.25rem; } }
 .btn{
-        transition: transform 1s;
-        -moz-transition: transform 1s; /* Firefox 4 */
-        -webkit-transition: transform 1s; /* Safari 和 Chrome */
-        -o-transition: transform 1s; /* Opera */
+        transition: all 1s;
+        -moz-transition: all 1s; /* Firefox 4 */
+        -webkit-transition: all 1s; /* Safari 和 Chrome */
+        -o-transition: all 1s; /* Opera */
     }
 .btn:hover{
-        transform: rotateX(360deg);
-        -ms-transform:rotateX(360deg); 	/* IE 9 */
-        -moz-transform:rotateX(360deg); 	/* Firefox */
-        -webkit-transform:rotateX(360deg); /* Safari 和 Chrome */
-        -o-transform:rotateX(360deg); 	/* Opera */
+    border-radius: 25px;
+        /*transform: rotateX(360deg);*/
+        /*-ms-transform:rotateX(360deg); 	/!* IE 9 *!/*/
+        /*-moz-transform:rotateX(360deg); 	/!* Firefox *!/*/
+        /*-webkit-transform:rotateX(360deg); /!* Safari 和 Chrome *!/*/
+        /*-o-transform:rotateX(360deg); 	/!* Opera *!/*/
     }
 
 /*.mypictrue{*/

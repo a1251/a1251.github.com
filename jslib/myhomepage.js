@@ -1,16 +1,16 @@
 $(document).ready(function () {
     $("textarea").attr("disabled","disabled");
-    var mypicbox = $(".mypic-box");
-    var mypicboxback = $(".mypic-box-back");
-    mypicbox.mouseenter(function () {
-            mypicboxback.animate({
-                top: '-128px'
-            });
-    }).mouseleave(function () {
-        mypicboxback.animate({
-            top: '-250px'
-        });
-    });
+    //var mypicbox = $(".mypic-box");
+    //var mypicboxback = $(".mypic-box-back");
+    //mypicbox.mouseenter(function () {
+    //        mypicboxback.animate({
+    //            top: '-128px'
+    //        });
+    //}).mouseleave(function () {
+    //    mypicboxback.animate({
+    //        top: '-250px'
+    //    });
+    //});
     var sliders = $("table tr td input[type=range]");
     var shulians = $(".shulian");
     sliders.change(function () {
