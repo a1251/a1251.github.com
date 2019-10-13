@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>HomePage Of XiaoWu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="shorcut icon" href=""/>
+    <link rel="stylesheet" href="../css/chatList.css">
+    <script type="text/javascript" src="../../bootstrap/js/jquery-3.1.1.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <div class="all-content">
+            <header class="chat-list-header">
+            </header>
+            <section class="chat-list-box">
+                <ul>
+                    <li class="chatter-box" v-for="(chat,index) in chatList" >
+                      <a href="./chatDetail.html">
+                        <div class="chatter-head-box">
+                            <img :src="chat.headPic" alt="">
+                        </div>
+                        <div class="chatter-content-box">
+                            <div class="chatter-name">
+                              {{chat.name}}
+                            </div>
+                            <div class="chatter-last-message">
+                              {{chat.lastMessage}}
+                            </div>
+                            <div class="chatter-message-time">
+                              {{chat.lastUpdateTime|messageTimeShow}}
+                            </div>
+                        </div>
+                      </a>
+                    </li>
+                </ul>
+            </section>
+            <footer class="chat-nav-bar">
+
+            </footer>
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../js/vue.js"></script>
+  <script type="text/javascript" src="../js/chatList.js"></script>
+</html>
