@@ -84,7 +84,7 @@ var app = {
     getChatListData: function(){
         $.ajax({
             type: 'get',
-            url: '../chatList.json',
+            url: 'https://github.com/a1251/a1251.github.com/tree/master/demo/chatList.json',
             dataType: 'jsonp',
             data: {},
             success: function(result){
