@@ -1,22 +1,21 @@
 <template>
   <div id="mainPage">
-    这是我的主页
-    <test>ceshi</test>
+    <myInfoTitleLeft :my-base-info="myBaseInfo"></myInfoTitleLeft>
   </div>
 </template>
 
 <script>
   import router from '@/router';
-  import test from '@/components/test.vue'
+  import store from '@/store'
+  import myInfoTitleLeft from '@/components/myInfoTitleLeft.vue'
   export default {
     name: 'mainPage',
       router,
-      components: {test},
+      store,
+      components: {myInfoTitleLeft},
       data(){
         return {
-            showLeft: true,
-            showRight: true,
-            showBtn: true,
+          myBaseInfo: store.state.myBaseInfo
         }
       },
       methods:{

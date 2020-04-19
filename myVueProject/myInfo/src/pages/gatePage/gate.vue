@@ -32,7 +32,6 @@
         var that = this;
         let leftGate = document.getElementsByClassName("gate-left")[0];
         let rightGate = document.getElementsByClassName("gate-right")[0];
-        console.log("openGate = " + leftGate.classList)
         leftGate.style.transform = 'translateX(-100%)';
         rightGate.style.transform = 'translateX(100%)';
         e.currentTarget.classList.add('btn-animation');
@@ -64,9 +63,17 @@
     background: #42B983;
     transition: all 1s;
   }
-  .gate-left{
-    /* border-right: 1px solid ; */
+  @media  screen and (max-width: 736px) {
+     .gate-left{
+    background: url(../../../static/img/my_photo.jpg) 0 0 no-repeat;
+    background-size: 200% 100%;
   }
+  .gate-right{
+    background: url(../../../static/img/my_photo.jpg) 100% 0 no-repeat;
+    background-size: 200% 100%;
+  }
+  }
+
   .btn-box{
     position: absolute;
     width: 100%;
