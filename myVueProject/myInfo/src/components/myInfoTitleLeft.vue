@@ -55,9 +55,12 @@
     top: 0;
     overflow-x: hidden;
     transition: all 0.6s;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 4;
     box-shadow: 2px 0 5px #2C3E50;
+  }
+  #myInfoTitleLeft::-webkit-scrollbar{
+    display: none;
   }
 /*  @media screen and (max-width:736px) {
     #myInfoTitleLeft{
