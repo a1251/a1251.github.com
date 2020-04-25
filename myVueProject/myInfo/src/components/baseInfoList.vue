@@ -23,53 +23,10 @@
 <script>
   export default{
     name: 'baseInfoListBox',
+    props: ['info-list'],
     data(){
       return {
-        infoList: [{
-          title: '个人信息',
-          parts: [
-            {
-              title: '出生年月:',
-              value: '1995-03-11'
-            },
-            {
-              title: '学历:',
-              value: '本科'
-            },
-            {
-              title: '专业:',
-              value: '软件工程'
-            }
-          ]
-        },{
-          title: '联系方式',
-          parts: [
-            {
-              title: '手机:',
-              value: '1995-03-11'
-            },
-            {
-              title: '邮箱:',
-              value: '1446736401@qq.com'
-            },
-            {
-              title: '现居地:',
-              value: '深圳市-龙岗区'
-            }
-          ]
-        },{
-          title: '证书',
-          parts: [
-            {
-              title: '',
-              value: '大学英语四级（466）'
-            },
-            {
-              title: '',
-              value: '学士学位证书'
-            }
-          ]
-        }]
+
       }
     }
   }

@@ -1,3 +1,5 @@
 {
-  "name": "Name"
+  "name": "Name",
+  "myName": "Sean",
+  "delete": "Delete"
 }

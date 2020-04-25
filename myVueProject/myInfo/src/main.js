@@ -5,10 +5,12 @@ import App from './App.vue'
 import router from './router'
 import VueI18n from 'vue-i18n'
 import store from '@/store'
+import common from '../static/js/common.js'
 
+Vue.prototype.common = common;
 Vue.config.productionTip = false
 Vue.use(VueI18n);
-Vue.prototype.store = store
+Vue.prototype.store = store;
 const i18n = new VueI18n({
   locale: store.state.lang,
   messages: {
@@ -20,14 +22,19 @@ const i18n = new VueI18n({
 new Vue({
   el: '#app',
   router,
+  store,
+  i18n,
     // components: {App},
     // template: '<App\>'
     render: (h) => {
       return h(App)
     },
+    created(){
+
+    },
     mounted (){
       this.$nextTick(function(){
-        this.$router.replace({path: '/gate'})
+        this.$router.replace({path: '/gate'}).catch(err => err)
       })
     }
 })
