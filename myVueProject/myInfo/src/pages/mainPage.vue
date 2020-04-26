@@ -27,10 +27,14 @@
       },
       mounted() {
         // debugger
-        let path = window.location.href;
-        if(path.indexOf('mainPage') != -1){
+        this.$nextTick(() => {
+          let path = window.location.href;
+          let screenWidth = document.body.offsetWidth;
+        if(path.indexOf('mainPage') != -1 && screenWidth > 450){
           this.common.showTopTip('以下内容未对PC端做适配，建议在手机上观看')
         }
+        })
+
       },
       methods:{
 
