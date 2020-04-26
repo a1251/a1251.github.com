@@ -25,11 +25,23 @@
         }
 
       },
+      mounted() {
+        // debugger
+        let path = window.location.href;
+        if(path.indexOf('mainPage') != -1){
+          this.common.showTopTip('以下内容未对PC端做适配，建议在手机上观看')
+        }
+      },
       methods:{
 
       }
   }
 </script>
 
-<style>
+<style scoped>
+  #mainPage{
+    max-width: 420px;
+    position: relative;
+    height: 100%;
+  }
 </style>

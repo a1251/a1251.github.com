@@ -82,7 +82,7 @@
      },
     methods: {
       chatItemClick(list){
-
+        // this.common.showTopTip("test")
       },
       deleteItem(list,index){
         let e = event || window.event;

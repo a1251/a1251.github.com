@@ -26,3 +26,40 @@ html,body{
   100%{
     opacity: 0;}
 }
+#topTip{
+  position: fixed;
+  left: 0;
+  top: -100px;
+  margin: 0 5px;
+  color: #FFFFFF;
+  background: rgba(0,0,0,.3);
+  width: calc(100% - 10px);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 999;
+  transition: all 0.5s;
+}
+#topTip.slideDown{
+  animation: slideDown 0.5s;
+}
+#topTip.slideUp{
+  animation: slideUp 0.5s;
+}
+@keyframes slideDown{
+  from{
+    top: -100px;
+  }
+  to{
+    top: 5px;
+  }
+}
+@keyframes slideUp{
+  from{
+    top: 5px;
+  }
+  to{
+    top: -100px
+  }
+}

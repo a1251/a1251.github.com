@@ -7,7 +7,7 @@
     <transition name="btn" :duration="300">
       <div class="btn-box" v-show="showBtn">
       <button class="ensure-enter" @click="openGate()">
-        查看蒋小武的个人简历
+        进入蒋小武的个人主页
       </button>
     </div>
     </transition>

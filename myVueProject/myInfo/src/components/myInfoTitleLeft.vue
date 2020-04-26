@@ -62,7 +62,7 @@
             parts: [
               {
                 title: '手机:',
-                value: '1995-03-11'
+                value: '17600012205'
               },
               {
                 title: '邮箱:',
@@ -100,16 +100,16 @@
       expandClick(){
         this.expandInfo ? this.expandInfo = false : this.expandInfo = true;
       },
-      onTouchStart(e){
-        // debugger
+      onTouchStart(){
+        let e = event || window.event;
           console.log("start = " + e.touches[0].clientX);
           this.touchStartP = e.touches[0].clientX
       },
-      onTouchEnd(e){
-        // debugger
+      onTouchEnd(){
+        let e = event || window.event;
           console.log("end = " + e.changedTouches[0].clientX);
           let end = e.changedTouches[0].clientX;
-          if(end - this.touchStartP < -100){
+          if(end - this.touchStartP < -70){
             this.expandInfo = false;
           }
       },
