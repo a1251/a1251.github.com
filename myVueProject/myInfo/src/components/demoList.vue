@@ -74,7 +74,7 @@
   }
   @media screen and (min-width: 420px) {
     .item-card{
-      width: 25%;
+      /* width: 25%; */
     }
   }
   .item-card.open{
