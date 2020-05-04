@@ -5,6 +5,8 @@ import gate from '@/pages/gatePage/gate.vue'
 import mainPage from '@/pages/mainPage.vue'
 import chatList from '@/pages/demos/chatList.vue'
 import demoList from '@/components/demoList.vue'
+import chatDetail from '@/pages/demos/chatDetail.vue'
+import myResume from '@/components/myResume.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -22,7 +24,17 @@ export default new Router({
     {
       path: '/mainPage',
       name: 'mainPage',
-      component: mainPage
+      component: mainPage,
+      children: [{
+        path: 'demoList',
+        name: 'demoList',
+        component: () => import(/*webpackChunkNmae: 'demoList'*/ '../components/demoList.vue'),
+      },
+      {
+        path: 'myResume',
+        name: 'myResume',
+        component: () => import(/*webpackChunkNmae: 'demoList'*/ '../components/myResume.vue'),
+      }]
     },
     {
       path: '/chatList',
@@ -30,10 +42,10 @@ export default new Router({
         component: chatList
     },
     {
-      path: '/demoList',
-        name: 'demoList',
-        component: demoList
-    },
+      path: '/chatDetail',
+        name: 'chatDetail',
+        component: chatDetail
+    }
   ],
   // mode: 'history'
 })

@@ -37,7 +37,7 @@
         e.currentTarget.classList.add('btn-animation');
         this.showBtn = false
         setTimeout(function(){
-          that.$router.push('/mainPage')
+          that.$router.push('/mainPage/demoList')
         },800);
       }
     }

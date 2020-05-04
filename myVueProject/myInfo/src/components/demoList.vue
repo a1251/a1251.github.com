@@ -5,12 +5,16 @@
       <div class="item-card" @click="cardClick">
         <chatList></chatList>
       </div>
+      <div class="item-card" @click="cardClick">
+        <chatDetail></chatDetail>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   import chatList from '@/pages/demos/chatList.vue'
+  import chatDetail from '@/pages/demos/chatDetail.vue'
   export default{
     name: 'demoList',
     data(){
@@ -18,15 +22,16 @@
         showCloseBtn: false
       }
     },
-    components: {chatList},
+    components: {chatList,chatDetail},
     computed:{
-      
+
     },
     methods:{
       cardClick(){
         let e = event || window.event
         e.currentTarget.classList.add('open');
         this.showCloseBtn = true;
+        this.$store.dispatch("changeNavStatus",false)
       },
       closeCard(){
         var cards = document.getElementsByClassName('item-card');
@@ -36,6 +41,7 @@
           }
         }
         this.showCloseBtn = false;
+        this.$store.dispatch("changeNavStatus",true)
       }
     }
   }
@@ -48,6 +54,9 @@
   }
   .list-box{
     padding: 15px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    height: 100%;
   }
   .close-icon{
     display: block;
@@ -66,11 +75,12 @@
     width: 100%;
     min-width: 300px;
     height: 150px;
-    box-shadow: 1px 1px 5px 1px #7aabdc;
+    box-shadow: 1px 1px 5px 1px #DDDDDD;
     border-radius: 4px;
     transition: all 0.3s;
     background: #FFFFFF;
     overflow: hidden;
+    margin-bottom: 15px;
   }
   @media screen and (min-width: 420px) {
     .item-card{
@@ -85,6 +95,7 @@
       height: 100%;
       box-shadow: none;
       border-radius: 0;
+      z-index: 9;
   }
   @keyframes openCard{
     0%{

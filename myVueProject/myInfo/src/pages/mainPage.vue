@@ -49,4 +49,7 @@
     height: 100%;
     margin: 0 auto;
   }
+  #rightInfoBox{
+    height: 100%;
+  }
 </style>
