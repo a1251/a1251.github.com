@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta  http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />-->
+    <title>大数据风控平台登录页面</title>
+    <link rel="shortcut icon" href="images/icon/logo.ico" type="image/x-icon"/>
+    <meta name="keywords" content="智数，数据，大数据，风控,平台登录">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/metro-icons.css">
+    <link href="css/metro.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/mainpage.css">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">-->
+    <script src="jslib/jquery-1.7.2.js"></script>
+    <!--<script src="jslib/metro.js"></script>-->
+    <script src="jslib/login-animate.js"></script>
+    <script src="jslib/login.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jslib/smart.verfiy.js"></script>
+</head>
+<body>
+    <h1 class="uSEO"></h1>
+    <div class="main-whole">
+        <div id="login-box">
+            <div class="logo-img"><a href="#"><img src="images/mainpage/word-logo.png"/></a></div>
+            <button class="login-button">登录</button>
+            <div class="login-main">
+                <div id="login">
+                    <form action="firstpage.html" method="post" onsubmit="">
+                        <div class="form-input">
+                            <!--<span class="mif-user"></span>-->
+                            <input type="text" placeholder="用户名"/>
+                        </div>
+                        <div class="form-input">
+                            <!--<span class="mif-lock"></span>-->
+                            <input type="password" placeholder="密码"/>
+                        </div>
+                        <!--<div>-->
+                        <!--<input type="password">-->
+                        <!--<span class="label">密码</span>-->
+                        <!--<span class="informer">enter</span>-->
+                        <!--<span class="placeholder">请输入密码</span>-->
+                        <!--<span class="icon mif-lock"></span>-->
+                        <!--<button class="button helper-button reveal"><span class="mif-looks"></span></button>-->
+                        <!--</div>-->
+                        <input type="submit" value="登录"/>
+                        <div class="access-pic">
+                            <!--<div class="access-word">请选择：<span>小猫</span>-->
+                                <!--<a href="#"><span class="mif-loop2 access-refresh">刷新</span></a>-->
+                            <!--</div>-->
+                            <!--<div>-->
+                                <!--<img style="width: 100%;height: 100%" src="http://36.111.38.138:8083/portal/identify">-->
+                            <!--</div>-->
+                            <div class="row col-lg-6">
+                                <div id = "picture">
+                                    <img src="verfiyCode" onclick="clickImg(event)" id="bigPicture" style="width:100%; height: 175px;"/>
+                                </div>
+                                <div style="margin-top: -175px; width: 300px; height:25px; z-index: 100; position: relative">
+                                    <label id = "label-refresh" style="margin-left: 250px; margin-top: 2px;">
+                                        <i class = "glyphicon glyphicon-refresh" onclick="refresh()" style="cursor: pointer">刷新</i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="main-function">
+            <div class="login-left">
+                <div id="card">
+                    最新推出
+                    <ul class="colspan6">
+                        <li class="card card1">
+                            <div class="card-word">以下是功能简单介绍，请看看是否有错，是否能看懂</div>
+                        </li>
+                        <li class="card card1">
+                            <div class="card-word">以下是功能简单介绍，请看看是否有错，是否能看懂</div>
+                        </li>
+                        <li class="card card2">
+                            <div class="card-word">以下是功能简单介绍，请看看是否有错，是否能懂</div>
+                        </li>
+                        <li class="card card2">
+                            <div class="card-word">以下是功能简单介绍，请看看是否有错，是否能看懂</div>
+                        </li>
+                        <li class="card card2">
+                            <div class="card-word">以下是功能简单介绍，请看看是否有错，是否能看懂</div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="small-card" class="colspan6">
+                    系统功能
+                    <ul class="colspan6">
+                        <li class="small-function">
+                                <div class="card4 change"><span class="mif-cog"></span></div>
+                                <div class="card3 change" style="float: right;"><span class="mif-cog"></span></div>
+                        </li>
+                        <li class="small-function">
+                            <div class="card3 change"><span class="mif-cog"></span></div>
+                            <div class="spe"></div>
+                        </li>
+                        <li class="small-function">
+                            <div class="card3 change"><span class="mif-cog"></span></div>
+                            <div class="card3 card-inside"><span class="mif-cog"></span></div>
+                            <div class="card3 change" style="float: right;"><span class="mif-cog"></span></div>
+                        </li>
+                        <li class="small-function">
+                            <div class="card3 change"><span class="mif-cog"></span></div>
+                            <div class="card4 change"  style="float: right;"><span class="mif-cog"></span></div>
+                        </li>
+                        <li class="small-function">
+                            <div class="card4 change"><span class="mif-cog"></span></div>
+                            <div class="card3 change" style="float: right;"><span class="mif-cog"></span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

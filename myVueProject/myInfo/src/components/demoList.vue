@@ -8,6 +8,15 @@
       <div class="item-card" @click="cardClick">
         <chatDetail></chatDetail>
       </div>
+      <div class="item-card"  @click="cardClick">
+        <h2>这是一些往期作品</h2>
+        <p>
+          <a href="../static/demo/smalltemplate/smartdata/index.html">智数登录页面</a>
+        </p>
+        <p>
+          <a href="../static/demo/smalltemplate/smartdata/firstpage.html">智数首页</a>
+        </p>
+      </div>
     </div>
   </div>
 </template>
