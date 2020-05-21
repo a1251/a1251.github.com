@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="智数,大数据，数据，风控">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="shortcut icon" href="images/icon/logo.ico" type="image/x-icon"/>
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/metro-icons.css">
+    <link rel="stylesheet" href="css/tableBackground.css">
+    <link rel="stylesheet" href="css/queryOne.css">
+    <script src="jslib/jquery-1.7.2.js"></script>
+    <script src="jslib/on-off-button.js"></script>
+    <title>单条查询</title>
+</head>
+<body>
+    <div id="maindata">
+        <div class="maindata-inner">
+            <div class="main-content">
+                <h4>请输入符合查询条件</h4>
+                <div class="query-box">
+                    <form class="query-info">
+                        <div class="form-up">
+                            <div class="query-input query-input-focus">
+                                <span>手机号：</span>
+                                <div class="query-input-right">
+                                    <div class="form-input form-input-focus">
+                                        <span class="mif-mobile"></span>
+                                        <input type="text"  id="mobile-number"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span></span><span class="error-words"></span></div>
+                                </div>
+                            </div>
+                            <div class="query-input">
+                                <span>姓名：</span>
+                                <div class="query-input-right">
+                                    <div class="form-input">
+                                        <span class="mif-user"></span>
+                                        <input type="text" disabled id="user-name"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span></span><span class="error-words"></span></div>
+                                </div>
+                            </div>
+
+                            <div class="query-input">
+                                <span>证件类型：</span>
+                                <div class="query-input-right">
+                                    <select disabled id="ident-cate">
+                                        <option value="1">身份证</option>
+                                        <option value="2">港澳通行证</option>
+                                        <option value="3">户口本</option>
+                                        <option value="4">。。。</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="query-input">
+                                <span>证件号：</span>
+                                <div class="query-input-right">
+                                    <div class="form-input">
+                                        <span class="mif-file-text"></span>
+                                        <input type="text" disabled id="ident-number"/>
+                                    </div>
+                                    <div class="error-box"><span class="mif-cancel"></span><span class="error-words"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-down">
+                            <div class="checkbox-group">
+                                <span>三要素验证</span>
+                                <input type="checkbox" id="threeElement"/>
+                                <label class="off-button" for="threeElement">
+                                    <label class="off"></label>
+                                </label>
+                                <span class="division"></span>
+                                <label>
+                                    <input type="checkbox" id="mobile" name="select"/>
+                                    <label class="my-checkbox" for="mobile"></label>
+                                    手机归属地
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="lastStandcity" name="select"/>
+                                    <label class="my-checkbox" for="lastStandcity"></label>
+                                    上月驻留城市
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="consumeStand" name="select"/>
+                                    <label class="my-checkbox" for="consumeStand"></label>
+                                    清费档次
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="arrearage" name="select"/>
+                                    <label class="my-checkbox" for="arrearage"></label>
+                                    欠费情况
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="netTime" name="select"/>
+                                    <label class="my-checkbox" for="netTime"></label>
+                                    在网时长
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="tbopen" name="select"/>
+                                    <label class="my-checkbox" for="tbopen"></label>
+                                    淘宝打开次数
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="jdopen" name="select"/>
+                                    <label class="my-checkbox" for="jdopen"></label>
+                                    京东打开次数
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="submit" value="查询"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
